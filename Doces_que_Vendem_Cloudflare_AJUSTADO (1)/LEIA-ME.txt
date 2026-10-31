@@ -1,0 +1,28 @@
+DOCES QUE VENDEM — CLOUDFLARE PAGES
+
+ESTE PACOTE TEM A HOME CORRETA:
+- index.html: quiz inicial + landing page integrada ao botao final.
+- capa_ebook.webp: imagem usada pela landing page.
+
+PASSO A PASSO NO GITHUB:
+1. Extraia o ZIP no computador.
+2. Abra o repositório que está conectado ao Cloudflare Pages.
+3. Se já existir index.html, substitua pelo NOVO index.html deste ZIP.
+4. Suba capa_ebook.webp junto na RAIZ do repositório (mesmo nível do index.html).
+5. Faça Commit changes e abra Cloudflare > Workers & Pages > seu projeto Pages > Deployments.
+6. Confira se o ultimo deploy aparece como Success.
+7. Abra o endereço exato informado na aba do projeto, terminando em .pages.dev.
+
+CONFIGURACAO DO CLOUDFLARE PAGES (projeto HTML estatico):
+- Framework: None
+- Build command: vazio
+- Build output directory: .
+- Production branch: main (ou a branch principal real do repositorio)
+- Nao confunda Workers com Pages.
+
+ATENCAO: o checkout da Kiwify ainda nao esta configurado. O botao de compra exibira um aviso ate inserir o link HTTPS. Para ativar a compra, solicite a edicao do arquivo com o checkout oficial.
+
+Se aparecer Page not found, cheque:
+(a) se os arquivos estao na raiz do GitHub, nao dentro de uma pasta,
+(b) se o ultimo deploy esta como Success,
+(c) se o dominio usado é o que aparece em seu dashboard.
